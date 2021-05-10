@@ -1,30 +1,42 @@
 html{
+
+}
+
+body{
+/*	height: 100%;
+	width: 100%;
+	text-align: center; */
+/* 	margin-top: 50vh; poussé de la moitié de hauteur de viewport
+	padding-right: 1px;
+	margin-top: 250px; */
 	background: url("riviere_gauche.jpg");
 	background-size: 100%;
 }
+
+main {
+	min-height: 85vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 h1{
 	display: inline;
 	font-family: lores-12,sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 60px;
-	
 }
-body{
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-	padding-right: 1px;
-	margin-top: 250px;
-}
-div.accueil{
+
+.accueil{
 	padding: 60px;
-	margin-left: 400px;
-	margin-right: 400px;
+/*	margin-left: 400px;
+	margin-right: 400px; */
+	max-width: 640px;
 	background-color: #FFA927;
 	color: white;
 	border-radius: 60px;
+	text-align: center;
 }
 .play{
 	background-color: white;
@@ -34,15 +46,35 @@ div.accueil{
 	font-weight: 700;
 	font-style: normal;
 }
+
+/* STYLES SUR LE FOOTER  */
+
 footer{
 	background-color: #000000;
-	position: absolute;
+	/*	position: absolute;
 	bottom: 0;
 	left: 0;
-	right: 0;
+	right: 0; */
 }
-footer a{
-	float: left;
+
+footer .dessus {
+	display: flex;
+}
+
+.language-choice {
+	flex-grow: 4;
+	text-align: right;
+}
+
+footer .dessous {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+footer a {
+/*	float: left; */
+text-align: left;
 }
 img.pegi{
 	height: 30px;
